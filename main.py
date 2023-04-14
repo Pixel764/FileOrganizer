@@ -1,4 +1,4 @@
-from organizer import organize
+from organizer import Organizer
 
 
 def start():
@@ -7,7 +7,9 @@ def start():
         if path.lower() == 'q':
             break
         else:
-            print(organize(path))
+            org = Organizer(path)
+            org.organize()
+            print(org.errors_logs)
 
 
 if __name__ == '__main__':
