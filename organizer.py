@@ -23,7 +23,7 @@ class Organizer:
 
     def organize(self):
         if not self.is_directory_exists():
-            return self.errors_logs.append('Path doesn\'t exists or path is not dir.')
+            return 'Path doesn\'t exists or path is not dir.'
 
         self.process()
         return self.errors_logs
